@@ -1,0 +1,24 @@
+/* same font-size, and font-family for buttons */
+.click-me,
+.no-click-me {
+    font-size: 28px;
+    font-family: Helvetica, "Times New Roman", sans-serif;
+}
+
+/* 
+    Add styling for the 'Click Me' 
+    
+    - black background (using hex style)
+    - white text (HSL style)
+    - bold text
+*/
+.click-me {
+    background-color: #000;
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+}
+
+/* The 'No, Click Me!' has a yellow background */
+.no-click-me {
+    background-color: rgb(255, 255, 0);
+}
