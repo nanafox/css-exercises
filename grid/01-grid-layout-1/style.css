@@ -5,10 +5,24 @@ html {
 }
 
 .container {
+  display: grid;
+  grid-template: 100px 100px 100px 100px 100px 100px 100px 100px / 100px 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-areas: 
+    "header header header header header header header header header"
+    "sidebar sidebar nav nav nav nav nav nav nav"
+    "sidebar sidebar article article article article article article article"
+    "sidebar sidebar article article article article article article article"
+    "sidebar sidebar article article article article article article article"
+    "sidebar sidebar article article article article article article article"
+    "sidebar sidebar article article article article article article article"
+    "sidebar sidebar article article article article article article article"
+    "footer footer footer footer footer footer footer footer footer"
+    ;
   text-align: center;
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+  gap: 0.3em;
 }
 
 .container div {
@@ -22,22 +36,27 @@ html {
 
 .header {
   background-color: #006157;
+  grid-area: header;
 }
 
 .sidebar {
   background-color: #005B94;
+  grid-area: sidebar;
 }
 
 .nav {
   background-color: #642cde;
+  grid-area: nav;
 }
 
 .article {
   background-color: #7E1DC3;
+  grid-area: article;
 }
 
 .footer {
   background-color: #393f4d;
+  grid-area: footer;
 }
 
 .article p {
