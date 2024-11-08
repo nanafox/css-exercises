@@ -1,19 +1,23 @@
 .odd {
-    background-color: rgb(220, 150, 150);
-    font-family: Verdana, "DejaVu Sans", sans-serif;
+  background-color: rgb(220, 150, 150);
+  font-family: Verdana, "DejaVu Sans", sans-serif;
 }
 
 #second-elem {
-    color: #0000ff;
-    font-size: 36px;
+  color: #0000ff;
+  font-size: 36px;
 }
 
 /* Modify the font for `Number 3` and `Number 4` */
 .modify-font-size {
-    font-size: 24px;
+}
+
+.third-elem {
+  font-size: 24px;
 }
 
 #fourth-elem {
-    background-color: #90ee90;
-    font-weight: bold;
+  background-color: #90ee90;
+  font-size: 24px;
+  font-weight: bold;
 }
