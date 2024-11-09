@@ -5,8 +5,11 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
+=======
+>>>>>>> upstream/main
 }
 
 img {
@@ -18,11 +21,14 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+<<<<<<< HEAD
   padding: 10px 12px;
 }
 
 button:hover {
   cursor: pointer;
+=======
+>>>>>>> upstream/main
 }
 
 input {
@@ -31,6 +37,7 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+<<<<<<< HEAD
 
 ul {
   margin: 0;
@@ -88,3 +95,5 @@ a {
   justify-content: center;
   gap: 8px;
 }
+=======
+>>>>>>> upstream/main

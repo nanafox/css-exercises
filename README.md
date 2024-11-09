@@ -25,6 +25,7 @@ If you have suggestions to improve an exercise, ideas for a new exercise, or not
     - You should not be checking the solution for an exercise until you finish it!
     - If your solution differs wildly from TOP's solution (and still passes the exercise's requirements), that's completely fine. Do feel free to ask about it in our Discord if there are parts you do not understand.
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. Do not submit your solutions to this repo, as any PRs that do so will be closed without merging.
 =======
     * Copies of repositories on your machine are called clones. If you need help cloning to your local environment, you can learn how from the GitHub documentation on [cloning a repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository).
@@ -46,6 +47,11 @@ If you have suggestions to improve an exercise, ideas for a new exercise, or not
 > [!IMPORTANT]
 > Do not submit your solutions to this repo, as any PRs that do so will be closed without merging.
 >>>>>>> a31b33c (Update other reference to PRing solutions)
+=======
+
+> [!IMPORTANT]
+> Do not submit your solutions to this repo, as any PRs that do so will be closed without merging.
+>>>>>>> upstream/main
 
 ## Some Hints
 - The official solutions put all changes at the _end_ of the CSS file, which may duplicate some selectors (e.g. there might be a `body {}` in the given CSS and another `body {}` in the solution). When you are working on an exercise, it is best practice to add your CSS to existing selectors instead of duplicating them at the end of the file. We're sacrificing this best practice in our official solutions to make it extra clear to you what things we changed to solve the exercise.

@@ -5,6 +5,7 @@ html {
 }
 
 .container {
+<<<<<<< HEAD
   display: grid;
   grid-template: 100px 100px 100px 100px 100px 100px 100px 100px / 100px 100px 100px 100px 100px 100px 100px 100px;
   grid-template-areas: 
@@ -18,11 +19,16 @@ html {
     "sidebar sidebar article article article article article article article"
     "footer footer footer footer footer footer footer footer footer"
     ;
+=======
+>>>>>>> upstream/main
   text-align: center;
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+<<<<<<< HEAD
   gap: 0.3em;
+=======
+>>>>>>> upstream/main
 }
 
 .container div {
@@ -36,27 +42,42 @@ html {
 
 .header {
   background-color: #006157;
+<<<<<<< HEAD
   grid-area: header;
+=======
+>>>>>>> upstream/main
 }
 
 .sidebar {
   background-color: #005B94;
+<<<<<<< HEAD
   grid-area: sidebar;
+=======
+>>>>>>> upstream/main
 }
 
 .nav {
   background-color: #642cde;
+<<<<<<< HEAD
   grid-area: nav;
+=======
+>>>>>>> upstream/main
 }
 
 .article {
   background-color: #7E1DC3;
+<<<<<<< HEAD
   grid-area: article;
+=======
+>>>>>>> upstream/main
 }
 
 .footer {
   background-color: #393f4d;
+<<<<<<< HEAD
   grid-area: footer;
+=======
+>>>>>>> upstream/main
 }
 
 .article p {
@@ -64,4 +85,8 @@ html {
   font-family: sans-serif;
   color: white;
   text-align: left;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> upstream/main
