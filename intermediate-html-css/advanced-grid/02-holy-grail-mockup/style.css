@@ -5,6 +5,16 @@
 
 .container {
   text-align: center;
+  display: grid;
+  gap: 4px;
+  grid-template-columns: 1fr 4fr;
+
+  /* a view of how the grid is layed out */
+  grid-template-areas:
+    "header header"
+    "sidebar nav"
+    "sidebar article"
+    "footer footer";
 }
 
 .container div {
@@ -16,45 +26,93 @@
 }
 
 .header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   background-color: #393f4d;
+  align-items: center;
+  grid-area: header;
+}
+
+/* shift the logo to the start of the axis */
+.logo {
+  justify-self: start;
+}
+
+/* menu styling */
+
+.menu ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .menu ul,
 .menu li {
   font-size: 16px;
+  list-style-type: none;
 }
 
+/* menu styling */
+
+/* sidebar styling */
+
 .sidebar {
-  background-color: #C50208;
+  background-color: #c50208;
+  display: grid;
+  gap: 50px;
+  grid-area: sidebar;
+}
+
+/* Center text in the sidebar vertically and horizontally */
+.sidebar .photo,
+.sidebar .side-content {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+  font-weight: normal;
 }
 
 .sidebar .photo {
-  background-color: white;
-  color: black;
   font-size: 12px;
-  font-weight: normal;
   border-radius: 10px;
 }
 
-
 .sidebar .side-content {
-  background-color: white;
-  color: black;
   font-size: 16px;
-  font-weight: normal;
 }
 
+/* end of sidebar styling */
+
+/* nav styling */
+
 .nav {
-  background-color: #C50208;
+  background-color: #c50208;
+  grid-area: nav;
+}
+
+.nav ul {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
 }
 
 .nav ul li {
   font-size: 16px;
   text-transform: uppercase;
+  list-style-type: none;
+  grid-row: 1 / span 3;
 }
+
+/* end of nav styling */
+
+/* article styling */
 
 .article {
   background-color: #bccbde;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  grid-area: article;
 }
 
 .article p {
@@ -65,10 +123,15 @@
 }
 
 .article .card {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: black;
   text-align: center;
+  height: 200px;
 }
+
+/* end of article styling */
+
+/* card styling */
 
 .card p {
   color: black;
@@ -81,11 +144,19 @@
   text-align: center;
 }
 
+/* end of card styling */
+
+/* footer styling */
+
 .footer {
   background-color: #393f4d;
+  grid-area: footer;
 }
 
 .footer p {
   font-size: 13px;
   font-weight: normal;
 }
+
+/* end of footer styling */
+
